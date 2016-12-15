@@ -11,19 +11,19 @@ router.get('/:id', function(req, res, next) {
                 delete user.password;
                 res.json(user)
             } else {
-                res.status(404);
-                res.json({
-                    message: "User Not Found!"
-                })
+                resError(res, 404, "User Not Found");
             }
         })
 
     } else {
-        res.status(500);
-        res.json({
-            message: "Invalid Input!"
-        })
+        resError(res, 500, "Invalid Input");
     }
 });
+
+
+function resError(res, statusCode, message) {
+  res.status(statusCode);
+  res.json({message});
+}
 
 module.exports = router;
