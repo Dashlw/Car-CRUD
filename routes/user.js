@@ -20,6 +20,19 @@ router.get('/:id', function(req, res, next) {
     }
 });
 
+router.get('/:id/car', function(req, res, next) {
+
+  if (!isNaN(req.params.id)) {
+      user.getCarsByUser(req.params.id).then(cars => {
+          res.json(cars);
+      });
+  } else {
+      resError(res, 500, "Invalid Input");
+  }
+})
+
+
+
 
 function resError(res, statusCode, message) {
   res.status(statusCode);
