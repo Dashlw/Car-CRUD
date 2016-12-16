@@ -5,19 +5,19 @@ exports.seed = function(knex, Promise) {
                 make: 'Ford',
                 model: 'Mustang',
                 year: 1977,
-                image: 'http://mustangattitude.com/mustang/1977/1977_00007_01wb.jpg',
+                image: 'https://mustangattitude.com/mustang/1977/1977_00007_01wb.jpg',
                 user_id: 1
             }, {
                 make: 'Totyota',
                 model: 'Prius',
                 year: 2012,
-                image: 'http://www.automobilesreview.com/gallery/2012-toyota-prius-family/2012-toyota-prius-family-05.jpg',
+                image: 'https://www.automobilesreview.com/gallery/2012-toyota-prius-family/2012-toyota-prius-family-05.jpg',
                 user_id: 2
             }, {
                 make: 'Porsche',
                 model: 'Cayman',
                 year: 2016,
-                image: 'http://www.conceptcarz.com/images/Porsche/Porsche-Cayman-Black-Edition-image-001.jpg',
+                image: 'https://www.conceptcarz.com/images/Porsche/Porsche-Cayman-Black-Edition-image-001.jpg',
                 user_id: 1
             }, {
                 make: 'Chevy',
